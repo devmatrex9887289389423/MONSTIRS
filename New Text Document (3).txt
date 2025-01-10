@@ -1,0 +1,142 @@
+wait(0.1)
+game.StarterGui:SetCore("SendNotification", {
+    Title = "مرحبا";
+    Text = "ذا سكربت ماتركس"; -- ARAB TEAM
+    Duration = 5;
+})
+
+
+
+
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+
+local Window = OrionLib:MakeWindow({Name = "mosetirs", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+
+local Tab = Window:MakeTab({
+	Name = "MONESTER",
+	Icon = "rbxassetid://138433202859785",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+
+local Section = Tab:AddSection({
+	Name = "the scripts"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+
+OrionLib:MakeNotification({
+	Name = "HELLO!",
+	Content = "Notification content... what will it say??",
+	Image = "rbxassetid://138433202859785",
+	Time = 5
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+
+
+Tab:AddButton({
+	Name = "REDZ!",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+Tab:AddButton({
+	Name = "Banana cat!",
+	Callback = function()
+      		repeat wait() until game:IsLoaded() and game.Players.LocalPlayer getgenv().Key = "Key" loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+Tab:AddButton({
+	Name = "MOON!",
+	Callback = function()
+      		loadstring(game:HttpGet"https://raw.githubusercontent.com/UserDevEthical/Loadstring/main/CokkaHub.lua")()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+Tab:AddButton({
+	Name = "Azure hub!",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Blox-Fruits-w-azure-hub-10114"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+Tab:AddButton({
+	Name = "Sara hub!",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/SaraSenpai/bloxfruist/main/Sarahub'))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+Tab:AddButton({
+	Name = "Hoho hub!",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHOH/main/LoadingUI"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
